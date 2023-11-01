@@ -1,6 +1,11 @@
-import { Navbar } from "@/components";
+import { Navbar, Services } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
-	return <Navbar />;
+	return (
+		<>
+			<Navbar />
+			<Services />
+		</>
+	);
 }
