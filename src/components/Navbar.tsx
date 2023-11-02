@@ -14,10 +14,19 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className="flex justify-between p-8 w-screen bg-gray-950">
+		<nav className="flex justify-between p-8 w-full bg-gray-950">
 			<div>Juan Peñaloza</div>
 			<div>
 				<ul className="flex items-center gap-8">
+					<li>
+						<button
+							type="button"
+							title="Home"
+							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+						>
+							Home
+						</button>
+					</li>
 					<li>
 						<button
 							type="button"
@@ -39,19 +48,19 @@ export default function Navbar() {
 					<li>
 						<button
 							type="button"
-							title="Projects"
+							title="Porfolio"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
-							Projects
+							Porfolio
 						</button>
 					</li>
 					<li>
 						<button
 							type="button"
-							title="Contact me"
+							title="Get in touch"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
-							Contact me
+							Get in touch
 						</button>
 					</li>
 					<li className="h-6">
@@ -74,9 +83,7 @@ export default function Navbar() {
 							{status ? (
 								<DownloadIcon className="my-1 h-4 w-4 stroke-inherit" />
 							) : (
-								<span className="font-medium">
-									Download CV
-								</span>
+								<span className="font-medium">Download CV</span>
 							)}
 						</button>
 					</li>
