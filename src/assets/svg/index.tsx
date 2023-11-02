@@ -221,7 +221,7 @@ export function CSSIcon({ ...restProps }) {
 			{...restProps}
 		>
 			<path
-				fill-rule="evenodd"
+				fillRule="evenodd"
 				d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"
 			></path>
 		</svg>
@@ -318,33 +318,14 @@ export function ServerIcon({ ...restProps }) {
 	);
 }
 
-export function DotsIcon({ ...restProps }) {
+export function ArrowUpRightSquareIcon({ ...restProps }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 172 172"
+			viewBox="0 0 24 24"
 			{...restProps}
 		>
-			<g
-				fill="none"
-				fill-rule="nonzero"
-				stroke="none"
-				stroke-width="1"
-				stroke-linecap="butt"
-				stroke-linejoin="miter"
-				stroke-miterlimit="10"
-				stroke-dasharray=""
-				stroke-dashoffset="0"
-				font-family="none"
-				font-weight="none"
-				font-size="none"
-				text-anchor="none"
-			>
-				<path d="M0,172v-172h172v172z" fill="none"></path>
-				<g fill="#1fb141">
-					<path d="M21.5,21.5v129h64.5v-32.25v-64.5v-32.25zM86,53.75c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25c-17.7805,0 -32.25,14.4695 -32.25,32.25zM118.25,86c-17.7805,0 -32.25,14.4695 -32.25,32.25c0,17.7805 14.4695,32.25 32.25,32.25c17.7805,0 32.25,-14.4695 32.25,-32.25c0,-17.7805 -14.4695,-32.25 -32.25,-32.25z"></path>
-				</g>
-			</g>
+			<path d="M20,11v8c0,2.757-2.243,5-5,5H5c-2.757,0-5-2.243-5-5V9c0-2.757,2.243-5,5-5H13c.552,0,1,.448,1,1s-.448,1-1,1H5c-1.654,0-3,1.346-3,3v10c0,1.654,1.346,3,3,3H15c1.654,0,3-1.346,3-3V11c0-.552,.448-1,1-1s1,.448,1,1ZM21,0h-7c-.552,0-1,.448-1,1s.448,1,1,1h6.586L8.293,14.293c-.391,.391-.391,1.023,0,1.414,.195,.195,.451,.293,.707,.293s.512-.098,.707-.293L22,3.414v6.586c0,.552,.448,1,1,1s1-.448,1-1V3c0-1.654-1.346-3-3-3Z" />
 		</svg>
 	);
 }

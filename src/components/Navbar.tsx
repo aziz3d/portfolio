@@ -2,6 +2,7 @@
 
 import { DownloadIcon, SunIcon } from "@/assets/svg";
 import { delay } from "@/utils";
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -19,49 +20,49 @@ export default function Navbar() {
 			<div>
 				<ul className="flex items-center gap-8">
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/"}
 							title="Home"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Home
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/about"}
 							title="About"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							About
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/services"}
 							title="Services"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Services
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
-							title="Porfolio"
+						<Link
+							href={"/portfolio"}
+							title="Portfolio"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
-							Porfolio
-						</button>
+							Portfolio
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/get-in-touch"}
 							title="Get in touch"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Get in touch
-						</button>
+						</Link>
 					</li>
 					<li className="h-6">
 						<button

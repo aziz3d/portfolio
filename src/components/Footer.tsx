@@ -1,13 +1,27 @@
+"use client";
+
 import {
 	ArrowIcon,
+	DownloadIcon,
 	GithubIcon,
 	LinkedinIcon,
 	NpmIcon,
 	SunIcon,
 } from "@/assets/svg";
+import { GITHUB_URL, LINKEDIN_URL, NPM_URL } from "@/constants";
+import { delay } from "@/utils";
 import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
+	const [status, setStatus] = React.useState(false);
+
+	const downloadCV = async () => {
+		setStatus(true);
+		await delay(3000);
+		setStatus(false);
+	};
+
 	return (
 		<footer className="flex flex-col px-6 w-full bg-gray-900">
 			<div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:gap-2 py-28">
@@ -25,21 +39,21 @@ export default function Footer() {
 					</div>
 					<div className="flex justify-center md:justify-start items-center gap-6">
 						<Link
-							href="https://www.linkedin.com/"
+							href={LINKEDIN_URL}
 							target="_blank"
 							className="fill-white hover:fill-yellow-200"
 						>
 							<LinkedinIcon className="h-7 w-7 fill-inherit" />
 						</Link>
 						<Link
-							href="https://github.com/"
+							href={GITHUB_URL}
 							target="_blank"
 							className="fill-white hover:fill-yellow-200"
 						>
 							<GithubIcon className="h-6 w-6 fill-inherit" />
 						</Link>
 						<Link
-							href="https://www.npmjs.com/"
+							href={NPM_URL}
 							target="_blank"
 							className="fill-white hover:fill-yellow-200"
 						>
@@ -48,12 +62,16 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className="flex flex-col gap-4">
-					<div className="flex items-center gap-4">
-						<span className="text-4xl text-gray-200 font-bold">
+					<Link
+						href={"/get-in-touch"}
+						title="Get in touch"
+						className="flex items-center gap-4 group"
+					>
+						<span className="text-4xl text-gray-200 font-bold group-hover:underline group-hover:underline-offset-8">
 							Get in touch
 						</span>
-						<ArrowIcon className="h-14 fill-yellow-400" />
-					</div>
+						<ArrowIcon className="h-14 fill-yellow-400 group-hover:ml-4 duration-200" />
+					</Link>
 					<div>
 						<p className="w-72 text-gray-400">
 							I&apos;m a fullstack developer eager to bring your{" "}
@@ -72,51 +90,51 @@ export default function Footer() {
 			</div>
 			<hr className="border-gray-400" />
 			<div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 py-8">
-				<ul className="flex flex-wrap gap-8">
+				<ul className="flex flex-wrap items-center gap-8">
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/"}
 							title="Home"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Home
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/about"}
 							title="About"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							About
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/services"}
 							title="Services"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Services
-						</button>
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
-							title="Porfolio"
+						<Link
+							href={"/portfolio"}
+							title="Portfolio"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
-							Porfolio
-						</button>
+							Portfolio
+						</Link>
 					</li>
 					<li>
-						<button
-							type="button"
+						<Link
+							href={"/get-in-touch"}
 							title="Get in touch"
 							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Get in touch
-						</button>
+						</Link>
 					</li>
 					<li className="h-6">
 						<button
@@ -125,6 +143,21 @@ export default function Footer() {
 							className="rounded-full focus:outline-offset-4 focus:outline-yellow-400 fill-white hover:fill-yellow-400"
 						>
 							<SunIcon className="h-6 w-6 fill-inherit" />
+						</button>
+					</li>
+					<li>
+						<button
+							type="button"
+							title="Download CV"
+							className={`flex items-center gap-2 px-4 py-2 text-yellow-400 border-2 border-yellow-400 rounded-full focus:outline-yellow-400 hover:bg-yellow-400 hover:text-gray-950 disabled:bg-yellow-200 disabled:border-yellow-200 disabled:stroke-gray-400 group duration-150`}
+							onClick={downloadCV}
+							disabled={status}
+						>
+							{status ? (
+								<DownloadIcon className="my-1 h-4 w-4 stroke-inherit" />
+							) : (
+								<span className="font-medium">Download CV</span>
+							)}
 						</button>
 					</li>
 				</ul>
