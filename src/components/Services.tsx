@@ -8,7 +8,7 @@ export default function Services() {
 			className="flex flex-col items-center gap-10 py-20 bg-gray-950"
 		>
 			<h2 className="text-white text-3xl font-bold">Services</h2>
-			<div className="flex gap-8">
+			<div className="flex flex-col sm:flex-row gap-8 px-8">
 				<div className="flex flex-col justify-between gap-2 p-8 max-w-sm bg-gray-900 hover:bg-yellow-300 rounded-2xl outline-offset-4 hover:outline hover:outline-offset-4 hover:outline-yellow-200 duration-75 group">
 					<h4 className="text-white text-sm font-bold uppercase group-hover:text-yellow-600">
 						App development

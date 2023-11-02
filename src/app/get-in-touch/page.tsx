@@ -10,11 +10,11 @@ export default function GetInTouch() {
 			<Navbar />
 			<section
 				id="get-in-touch"
-				className="flex flex-col-reverse xl:flex-row justify-center items-center gap-16 pt-16 bg-gray-900"
+				className="flex flex-col-reverse xl:flex-row justify-center items-center gap-16 pt-16 px-8 bg-gray-900"
 			>
 				<form
 					action=""
-					className="flex flex-col gap-4 p-16 h-min min-w-[500px] max-w-[500px] bg-gray-800 rounded-4xl"
+					className="flex flex-col gap-4 p-10 sm:p-16 h-min w-full sm:min-w-[500px] max-w-[500px] bg-gray-800 rounded-4xl"
 				>
 					<label htmlFor="name" className="flex flex-col gap-2">
 						Full name
