@@ -18,8 +18,8 @@ import {
 
 export default function Skills() {
 	return (
-		<section id="section" className="px-8">
-			<div className="relative flex flex-col gap-8 p-6 sm:p-8 w-full bg-gradient-to-tr from-yellow-400 via-yellow-300 to-yellow-200 rounded-2xl shadow-inner">
+		<section id="section" className="flex justify-center items-center p-8 bg-gray-950">
+			<div className="relative flex flex-col gap-8 p-6 sm:p-8 w-full max-w-6xl bg-gradient-to-tr from-yellow-400 via-yellow-300 to-yellow-200 rounded-2xl shadow-inner">
 				<div className="flex flex-col gap-4 z-10">
 					<h2 className="text-yellow-600 text-3xl font-bold">
 						Skills
