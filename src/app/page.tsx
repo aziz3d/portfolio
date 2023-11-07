@@ -1,4 +1,4 @@
-import { Hero, Navbar, Services, Skills } from "@/components";
+import { Experience, Hero, Navbar, Services, Skills } from "@/components";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
 		<>
 			<Navbar />
 			<Hero />
+			<Experience />
 			<Skills />
 			<Services />
 			<Footer />

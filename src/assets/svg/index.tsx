@@ -626,7 +626,6 @@ export function InnovationIcon({ ...restProps }) {
 					gradientTransform="matrix(-0.77, 0.63, -0.63, -0.77, 382.99, 75.52)"
 				/>
 			</defs>
-			<title>-</title>
 			<g>
 				<g id="Layer_1" data-name="Layer 1">
 					<path
@@ -1035,6 +1034,18 @@ export function InnovationIcon({ ...restProps }) {
 					/>
 				</g>
 			</g>
+		</svg>
+	);
+}
+
+export function ChevronIcon({ ...restProps }) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 448 512"
+			{...restProps}
+		>
+			<path d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
 		</svg>
 	);
 }
