@@ -18,6 +18,12 @@ const config: Config = {
 				"5xl": "2.5rem",
 				"6xl": "3rem",
 			},
+			scale: {
+				flip: "-1",
+				102: "1.02",
+				103: "1.03",
+				104: "1.04",
+			},
 		},
 	},
 	plugins: [],
