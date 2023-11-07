@@ -15,7 +15,7 @@ export default function Portfolio() {
 					Portfolio
 				</h1>
 				<div className="grid grid-cols-3 grid-rows-3 gap-8 px-8 w-full">
-					<div className="relative col-span-3 col-start-1 col-end-4 flex flex-col justify-between gap-4 p-8 h-72 w-full bg-gradient-to-tl from-gray-800 to-gray-600 hover:from-gray-800 hover:to-gray-500 rounded-3xl cursor-pointer group overflow-hidden hover:outline hover:outline-offset-4 hover:outline-gray-600 duration-150">
+					<div className="relative col-span-3 col-start-1 col-end-4 flex flex-col justify-between gap-4 p-8 h-72 w-full bg-gradient-to-tl from-gray-800 to-gray-600 hover:from-gray-800 hover:to-gray-500 rounded-3xl cursor-pointer overflow-hidden hover:outline hover:outline-offset-4 hover:outline-gray-600 hover:scale-102 duration-300 group">
 						<div className="flex justify-between items-center gap-4 z-10">
 							<h3 className="text-3xl text-gray-400 font-bold group-hover:text-gray-200 select-none duration-200 group-hover:underline group-hover:underline-offset-4">
 								Portfolio
@@ -59,14 +59,14 @@ export default function Portfolio() {
 							elit, sed do eiusmod tempor incididunt ut labore et
 							dolore magna aliqua.
 						</p>
-						<div className="absolute -bottom-20 -right-60 -rotate-12 grid grid-cols-2 grid-rows-2 gap-4 z-0 opacity-60 group-hover:opacity-80 duration-500">
+						<div className="absolute -bottom-20 -right-60 -rotate-12 grid grid-cols-2 grid-rows-2 gap-4 z-0 opacity-50 group-hover:opacity-80 duration-300 group-hover:scale-110">
 							<Image
 								src="/portfolio0.png"
 								alt="Portfolio"
 								width={500}
 								height={350}
 								objectFit="contain"
-								className="col-start-1 col-end-2 row-start-1 row-end-2 mt-16 rounded-3xl"
+								className="col-start-1 col-end-2 row-start-1 row-end-2 mt-16 rounded-3xl shadow-xl"
 							/>
 							<Image
 								src="/portfolio2.png"
@@ -74,7 +74,7 @@ export default function Portfolio() {
 								width={500}
 								height={350}
 								objectFit="contain"
-								className="col-start-1 col-end-2 row-start-2 row-end-3 rounded-3xl"
+								className="col-start-1 col-end-2 row-start-2 row-end-3 rounded-3xl shadow-xl"
 							/>
 							<Image
 								src="/portfolio1.png"
@@ -82,7 +82,7 @@ export default function Portfolio() {
 								width={500}
 								height={350}
 								objectFit="contain"
-								className="col-start-2 col-end-3 row-start-2 row-end-3 rounded-3xl"
+								className="col-start-2 col-end-3 row-start-2 row-end-3 rounded-3xl shadow-xl"
 							/>
 						</div>
 					</div>

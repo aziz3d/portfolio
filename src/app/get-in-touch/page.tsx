@@ -10,7 +10,7 @@ export default function GetInTouch() {
 			<Navbar />
 			<section
 				id="get-in-touch"
-				className="flex flex-col-reverse xl:flex-row justify-center items-center gap-16 pt-16 px-8 bg-gray-900"
+				className="flex flex-col-reverse xl:flex-row justify-center items-center gap-16 pt-16 px-8 bg-gradient-to-b from-gray-950 to-gray-900"
 			>
 				<form
 					action=""

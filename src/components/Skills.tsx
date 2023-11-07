@@ -77,7 +77,7 @@ export default function Skills() {
 					<div className="flex justify-center items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 h-14 bg-yellow-400 hover:bg-yellow-200 hover:outline hover:outline-offset-4 hover:outline-yellow-200 rounded-full duration-200">
 						<PHPIcon className="w-10 h-8 fill-yellow-800" />
 						<span className="text-sm sm:text-base text-yellow-800 font-semibold">
-							Figma
+							PHP
 						</span>
 					</div>
 					<div className="flex justify-center items-center gap-1 sm:gap-2 px-3 sm:px-6 py-3 h-14 bg-yellow-400 hover:bg-yellow-200 hover:outline hover:outline-offset-4 hover:outline-yellow-200 rounded-full duration-200">

@@ -17,7 +17,7 @@ export default function Hero() {
 							Fullstack developer
 						</h2>
 					</div>
-					<p>
+					<p className="text-gray-300">
 						I&apos;m Daniel Peñaloza, a Full-Stack Web Developer
 						with a deep love for creating seamless, user-friendly
 						web applications.
