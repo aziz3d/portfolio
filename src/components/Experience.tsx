@@ -9,7 +9,6 @@ const FILTERS = [
 	"React Native",
 	"Next",
 	"Node",
-	"Python",
 	"PHP",
 	"HTML",
 	"CSS",
