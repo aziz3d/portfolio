@@ -9,7 +9,6 @@ export default function Hero() {
 		>
 			<div className="mx-auto grid max-w-6xl grid-cols-1 gap-24 lg:grid-cols-2">
 				<div className="relative z-10 flex flex-col justify-center gap-8">
-					<div className="absolute -bottom-8 left-20 h-72 w-72 rounded-full bg-yellow-300 opacity-20 blur-2xl filter"></div>
 					<div className="flex flex-col gap-2">
 						<h1 className="text-5xl font-bold text-yellow-200">
 							Daniel Peñaloza
