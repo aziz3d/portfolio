@@ -3,7 +3,6 @@
 import { ChevronIcon } from "@/assets/svg";
 import React, { useState } from "react";
 import * as DATA from "../data/experience.json";
-import getFormat, { formatDateUTC } from "@/utils/format";
 
 const FILTERS = [
 	"React",
@@ -61,10 +60,10 @@ export default function Experience() {
 	return (
 		<section
 			id="experience"
-			className="flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-950 px-8 py-24"
+			className="flex justify-center items-center px-8 py-24 bg-gradient-to-b from-gray-900 to-gray-950"
 		>
-			<div className="flex w-full max-w-6xl flex-col items-start justify-center gap-4">
-				<h2 className="text-3xl font-bold text-white">Experience</h2>
+			<div className="flex flex-col justify-center items-start gap-4 w-full max-w-6xl">
+				<h2 className="text-white text-3xl font-bold">Experience</h2>
 				<div
 					className={`flex ${
 						showMore
@@ -72,21 +71,21 @@ export default function Experience() {
 							: "items-center gap-4"
 					} text-gray-300`}
 				>
-					<span className="flex h-8 items-center">Tags:</span>
-					<ul className="flex flex-wrap gap-2 text-gray-400">
+					<span className="flex items-center h-8">Tags:</span>
+					<ul className="flex gap-2 flex-wrap text-gray-400">
 						{selectedFilters.map((filter) => (
 							<li
 								key={filter}
 								title={`Deselect ${filter}`}
 								onClick={() => handleFilterClick(filter)}
-								className="cursor-pointer rounded-full bg-gray-800 px-2.5 py-1 duration-100 hover:bg-gray-600"
+								className="px-2.5 py-1 bg-gray-800 hover:bg-gray-600 rounded-full cursor-pointer duration-100"
 							>
 								{filter}
 							</li>
 						))}
 						{selectedFilters.length > 0 && (
 							<li>
-								<div className="h-8 w-0.5 bg-gray-800" />
+								<div className="w-0.5 h-8 bg-gray-800" />
 							</li>
 						)}
 						{leftFilters
@@ -96,7 +95,7 @@ export default function Experience() {
 									key={filter}
 									title={`Select ${filter}`}
 									onClick={() => handleFilterClick(filter)}
-									className="cursor-pointer rounded-full bg-gray-800 px-2.5 py-1 duration-100 hover:bg-gray-600"
+									className="px-2.5 py-1 bg-gray-800 hover:bg-gray-600 rounded-full cursor-pointer duration-100"
 								>
 									{filter}
 								</li>
@@ -105,7 +104,7 @@ export default function Experience() {
 							<button
 								type="button"
 								onClick={() => setShowMore(!showMore)}
-								className="flex cursor-pointer items-center gap-2 fill-gray-400 px-2.5 py-1 text-gray-400 duration-100 hover:fill-gray-200 hover:text-gray-200"
+								className="flex items-center gap-2 px-2.5 py-1 text-gray-400 fill-gray-400 hover:text-gray-200 hover:fill-gray-200 cursor-pointer duration-100"
 							>
 								{showMore ? "Less tags" : "More tags"}
 								<ChevronIcon
@@ -117,48 +116,46 @@ export default function Experience() {
 						</li>
 					</ul>
 				</div>
-				<div className="mt-4 flex w-full flex-col items-center gap-4 self-start">
-					<ul className="flex w-full flex-col gap-4">
+				<div className="self-start flex flex-col items-center gap-4 mt-4">
+					<ul className="flex flex-col gap-4">
 						{DATA.map((item) => (
 							<li
 								key={item.company}
-								className="flex w-full flex-1"
+								className="flex-1 flex gap-4 w-full overflow-hidden"
 							>
-								<div className="flex flex-grow-0 flex-col items-center justify-center gap-4">
-									<div className="h-10 max-h-[2.5rem] min-h-[2.5rem] w-10 min-w-[2.5rem] max-w-[2.5rem] rounded-full bg-gray-700" />
-									<div className="h-full w-1 rounded-full bg-gray-800" />
+								<div className="flex flex-col justify-center items-center flex-grow-0 gap-4">
+									<div className="h-10 w-10 min-h-[2.5rem] min-w-[2.5rem] max-h-[2.5rem] max-w-[2.5rem] bg-gray-700 rounded-full" />
+									<div className="h-full w-1 bg-gray-800 rounded-full" />
 								</div>
-								<div className="flex flex-grow flex-col gap-4 truncate pl-4 text-gray-300">
-									<div className="flex items-center">
-										<span className="flex h-10 max-h-[2.5rem] items-center truncate text-lg font-semibold text-gray-200">
+								<div className="flex flex-col flex-grow gap-4 text-gray-300">
+									<div className="flex items-center overflow-hidden">
+										<span className="flex items-center h-10 max-h-[2.5rem] text-lg text-gray-200 font-semibold">
 											{item.company}
 										</span>
 									</div>
-									<div className="flex w-full flex-col gap-1">
-										<div className="flex w-full items-center gap-2">
-											<span className="font-semibold text-gray-200">
+									<div className="flex flex-col gap-1">
+										<div className="flex items-center gap-2">
+											<span className="text-gray-200 font-semibold">
 												Working period
 											</span>
 											<span className="text-gray-400">
 												(1 año 7 meses)
 											</span>
 										</div>
-										<div className="flex w-full flex-col gap-2 pl-4 sm:flex-row">
+										<div className="flex gap-2 pl-4">
 											<div className="flex items-center gap-2">
-												<span className="font-semibold text-gray-200">
+												<span className="text-gray-200 font-semibold">
 													from:
 												</span>
 												<span className="text-gray-400">
-													{formatDateUTC(
-														item.from
-													).shortDate()}
+													{item.from}
 												</span>
 											</div>
-											<span className="hidden text-gray-400 sm:block">
+											<span className="text-gray-400">
 												/
 											</span>
 											<div className="flex items-center gap-2">
-												<span className="font-semibold text-gray-200">
+												<span className="text-gray-200 font-semibold">
 													to:
 												</span>
 												<span className="text-gray-400">
@@ -167,32 +164,32 @@ export default function Experience() {
 											</div>
 										</div>
 									</div>
-									<div className="flex w-full items-center gap-2">
-										<span className="font-semibold text-gray-200">
+									<div className="flex items-center gap-2">
+										<span className="text-gray-200 font-semibold">
 											Job title:
 										</span>
 										<span className="text-gray-400">
 											{item.jobTitle}
 										</span>
 									</div>
-									<div className="flex w-full items-center gap-2">
-										<span className="font-semibold text-gray-200">
+									<div className="flex items-center gap-2">
+										<span className="text-gray-200 font-semibold">
 											Modality:
 										</span>
 										<span className="text-gray-400">
 											{item.modality}
 										</span>
 									</div>
-									<div className="flex w-full flex-col">
-										<span className="font-semibold text-gray-200">
+									<div className="flex flex-col">
+										<span className="text-gray-200 font-semibold">
 											Description:
 										</span>
-										<p className="w-full whitespace-break-spaces text-gray-400">
+										<p className="text-gray-400">
 											{item.description}
 										</p>
 									</div>
-									<div className="flex w-full flex-col gap-1">
-										<span className="text-base font-semibold text-gray-200">
+									<div className="flex flex-col gap-1">
+										<span className="text-base text-gray-200 font-semibold">
 											Tags:
 										</span>
 										<ul className="flex flex-wrap gap-2 text-gray-400">

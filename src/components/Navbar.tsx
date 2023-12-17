@@ -4,7 +4,6 @@ import { BarsMenuIcon, DownloadIcon, SunIcon, XMarkIcon } from "@/assets/svg";
 import { delay } from "@/utils";
 import Link from "next/link";
 import React from "react";
-import ThemeSwitcher from "./ThemeButton";
 
 export default function Navbar() {
 	const [status, setStatus] = React.useState(false);
@@ -40,7 +39,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<nav className="flex w-full justify-between bg-gray-950 p-8">
+			<nav className="flex justify-between p-8 w-full bg-gray-950">
 				<div>Juan Peñaloza</div>
 				<div>
 					<ul className="flex items-center gap-8">
@@ -48,7 +47,7 @@ export default function Navbar() {
 							<Link
 								href={"/"}
 								title="Home"
-								className="hidden rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400 lg:block"
+								className="hidden lg:block text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 							>
 								Home
 							</Link>
@@ -57,7 +56,7 @@ export default function Navbar() {
 							<Link
 								href={"/about"}
 								title="About"
-								className="hidden rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400 lg:block"
+								className="hidden lg:block text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 							>
 								About
 							</Link>
@@ -66,7 +65,7 @@ export default function Navbar() {
 							<Link
 								href={"/services"}
 								title="Services"
-								className="hidden rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400 lg:block"
+								className="hidden lg:block text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 							>
 								Services
 							</Link>
@@ -75,7 +74,7 @@ export default function Navbar() {
 							<Link
 								href={"/portfolio"}
 								title="Portfolio"
-								className="hidden rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400 lg:block"
+								className="hidden lg:block text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 							>
 								Portfolio
 							</Link>
@@ -84,19 +83,25 @@ export default function Navbar() {
 							<Link
 								href={"/get-in-touch"}
 								title="Get in touch"
-								className="hidden rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400 lg:block"
+								className="hidden lg:block text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 							>
 								Get in touch
 							</Link>
 						</li>
 						<li className="h-6">
-							<ThemeSwitcher />
+							<button
+								type="button"
+								title="Toggle dark mode"
+								className="rounded-full focus:outline-offset-4 focus:outline-yellow-400 fill-white hover:fill-yellow-400"
+							>
+								<SunIcon className="h-6 w-6 fill-inherit" />
+							</button>
 						</li>
-						<li className="block h-6 lg:hidden">
+						<li className="block lg:hidden h-6">
 							<button
 								type="button"
 								title="Open menu"
-								className="rounded-lg fill-white hover:fill-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+								className="rounded-lg focus:outline-offset-4 focus:outline-yellow-400 fill-white hover:fill-yellow-400"
 								onClick={showOverlay}
 							>
 								<BarsMenuIcon className="h-6 w-6 fill-inherit" />
@@ -106,7 +111,7 @@ export default function Navbar() {
 							<button
 								type="button"
 								title="Download CV"
-								className={`group hidden items-center gap-2 rounded-full border-2 border-yellow-400 px-4 py-2 text-yellow-400 duration-150 hover:bg-yellow-400 hover:text-gray-950 focus:outline-yellow-400 disabled:border-yellow-200 disabled:bg-yellow-200 disabled:stroke-gray-400 lg:flex`}
+								className={`hidden lg:flex items-center gap-2 px-4 py-2 text-yellow-400 border-2 border-yellow-400 rounded-full focus:outline-yellow-400 hover:bg-yellow-400 hover:text-gray-950 disabled:bg-yellow-200 disabled:border-yellow-200 disabled:stroke-gray-400 group duration-150`}
 								onClick={downloadCV}
 								disabled={status}
 							>
@@ -123,7 +128,7 @@ export default function Navbar() {
 				</div>
 			</nav>
 			{visible && (
-				<div className="absolute bottom-0 left-0 right-0 top-0 z-50 flex h-screen flex-col items-center bg-gray-800 p-8">
+				<div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center p-8 h-screen bg-gray-800 z-50">
 					<button
 						type="button"
 						title="Open menu"
@@ -132,13 +137,13 @@ export default function Navbar() {
 					>
 						<XMarkIcon className="h-6 w-6 fill-white hover:fill-yellow-400" />
 					</button>
-					<div className="flex h-full w-full items-center justify-center">
+					<div className="flex justify-center items-center h-full w-full">
 						<ul className="flex flex-col items-center gap-8">
 							<li>
 								<Link
 									href={"/"}
 									title="Home"
-									className="block rounded-full text-2xl text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+									className="block text-2xl text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 									onClick={hideOverlay}
 								>
 									Home
@@ -148,7 +153,7 @@ export default function Navbar() {
 								<Link
 									href={"/about"}
 									title="About"
-									className="block rounded-full text-2xl text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+									className="block text-2xl text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 									onClick={hideOverlay}
 								>
 									About
@@ -158,7 +163,7 @@ export default function Navbar() {
 								<Link
 									href={"/services"}
 									title="Services"
-									className="block rounded-full text-2xl text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+									className="block text-2xl text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 									onClick={hideOverlay}
 								>
 									Services
@@ -168,7 +173,7 @@ export default function Navbar() {
 								<Link
 									href={"/portfolio"}
 									title="Portfolio"
-									className="block rounded-full text-2xl text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+									className="block text-2xl text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 									onClick={hideOverlay}
 								>
 									Portfolio
@@ -178,7 +183,7 @@ export default function Navbar() {
 								<Link
 									href={"/get-in-touch"}
 									title="Get in touch"
-									className="block rounded-full text-2xl text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+									className="block text-2xl text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 									onClick={hideOverlay}
 								>
 									Get in touch
@@ -188,7 +193,7 @@ export default function Navbar() {
 								<button
 									type="button"
 									title="Download CV"
-									className={`group flex items-center gap-2 rounded-full border-2 border-yellow-400 px-4 py-2 text-yellow-400 duration-150 hover:bg-yellow-400 hover:text-gray-950 focus:outline-yellow-400 disabled:border-yellow-200 disabled:bg-yellow-200 disabled:stroke-gray-400`}
+									className={`flex items-center gap-2 px-4 py-2 text-yellow-400 border-2 border-yellow-400 rounded-full focus:outline-yellow-400 hover:bg-yellow-400 hover:text-gray-950 disabled:bg-yellow-200 disabled:border-yellow-200 disabled:stroke-gray-400 group duration-150`}
 									onClick={downloadCV}
 									disabled={status}
 								>
