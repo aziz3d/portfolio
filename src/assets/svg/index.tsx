@@ -545,8 +545,8 @@ export function InnovationIcon({ ...restProps }) {
 					y2="191.65"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop offset="0" stop-opacity="0" />
-					<stop offset="0.99" stop-color="#1a1a1a" />
+					<stop offset="0" stopOpacity="0" />
+					<stop offset="0.99" stopColor="#1a1a1a" />
 				</linearGradient>
 				<linearGradient
 					id="linear-gradient-2"
@@ -570,8 +570,8 @@ export function InnovationIcon({ ...restProps }) {
 					y2="175.01"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop offset="0" stop-color="#fff" />
-					<stop offset="1" stop-color="#009486" />
+					<stop offset="0" stopColor="#fff" />
+					<stop offset="1" stopColor="#009486" />
 				</linearGradient>
 				<linearGradient
 					id="linear-gradient-5"
@@ -581,9 +581,9 @@ export function InnovationIcon({ ...restProps }) {
 					y2="155.28"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop offset="0" stop-color="#fff" />
-					<stop offset="0.97" stop-color="#ed1c24" />
-					<stop offset="1" stop-color="#f7931e" />
+					<stop offset="0" stopColor="#fff" />
+					<stop offset="0.97" stopColor="#ed1c24" />
+					<stop offset="1" stopColor="#f7931e" />
 				</linearGradient>
 				<linearGradient
 					id="linear-gradient-6"
@@ -641,7 +641,7 @@ export function InnovationIcon({ ...restProps }) {
 						d="M88.65,173.85,192,115a16.58,16.58,0,0,1,16.54.08l106.51,62a9.21,9.21,0,0,1,0,16l-99.4,57.08a22.21,22.21,0,0,1-22.14,0L88.61,189.84A9.21,9.21,0,0,1,88.65,173.85Z"
 						fill="none"
 						stroke="#e6e6e6"
-						stroke-miterlimit="10"
+						strokeMiterlimit="10"
 					/>
 					<polyline
 						points="347.17 186.06 268.99 232.53 240.19 211.45 326.74 159.33"
@@ -876,8 +876,8 @@ export function InnovationIcon({ ...restProps }) {
 						r="1.59"
 						fill="none"
 						stroke="#42210b"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<circle
 						cx="90.35"
@@ -885,8 +885,8 @@ export function InnovationIcon({ ...restProps }) {
 						r="1.76"
 						fill="none"
 						stroke="#42210b"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<line
 						x1="87.16"
@@ -895,8 +895,8 @@ export function InnovationIcon({ ...restProps }) {
 						y2="83.47"
 						fill="none"
 						stroke="#42210b"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<line
 						x1="92.07"
@@ -905,15 +905,15 @@ export function InnovationIcon({ ...restProps }) {
 						y2="82.45"
 						fill="none"
 						stroke="#42210b"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<path
 						d="M92.76,83.35s1.57,1.1.31,1.76"
 						fill="none"
 						stroke="#42210b"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<path
 						d="M73.52,113.3s-.73,6.18,4.84,6.83,19.49-7.71,19.49-7.71-.72-4.11-2.22-5.57-12.9,1.46-12.9,1.46"
@@ -956,29 +956,29 @@ export function InnovationIcon({ ...restProps }) {
 						points="301.96 118.74 333.87 136.69 347.17 129.92"
 						fill="none"
 						stroke="#f2f2f2"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<polyline
 						points="301.96 136.69 333.87 154.65 347.17 147.87"
 						fill="none"
 						stroke="#f2f2f2"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<polyline
 						points="301.96 152.85 333.87 170.81 347.17 164.03"
 						fill="none"
 						stroke="#f2f2f2"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<polyline
 						points="301.96 169.16 333.87 187.11 347.17 180.34"
 						fill="none"
 						stroke="#f2f2f2"
-						stroke-miterlimit="10"
-						stroke-width="0.25"
+						strokeMiterlimit="10"
+						strokeWidth="0.25"
 					/>
 					<polygon
 						points="334.02 124.19 347.17 117.03 315.27 98.62 301.96 105.69 334.02 124.19"

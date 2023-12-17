@@ -5,16 +5,16 @@ export default function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative px-8 py-32 bg-gray-950 overflow-hidden"
+			className="light:bg-gray-200 relative overflow-hidden px-8 py-32 dark:bg-gray-950"
 		>
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mx-auto max-w-6xl">
-				<div className="relative flex flex-col justify-center gap-8 z-10">
-					<div className="absolute -bottom-8 left-20 w-72 h-72 bg-yellow-300 rounded-full opacity-20 filter blur-2xl"></div>
+			<div className="mx-auto grid max-w-6xl grid-cols-1 gap-24 lg:grid-cols-2">
+				<div className="relative z-10 flex flex-col justify-center gap-8">
+					<div className="absolute -bottom-8 left-20 h-72 w-72 rounded-full bg-yellow-300 opacity-20 blur-2xl filter"></div>
 					<div className="flex flex-col gap-2">
-						<h1 className="text-5xl text-yellow-200 font-bold">
+						<h1 className="text-5xl font-bold text-yellow-200">
 							Daniel Peñaloza
 						</h1>
-						<h2 className="text-3xl text-gray-400 font-medium">
+						<h2 className="text-3xl font-medium text-gray-400">
 							Fullstack developer
 						</h2>
 					</div>
@@ -33,7 +33,7 @@ export default function Hero() {
 						<li>🛡️ Security Best Practices</li>
 						<li>🎨 Figma (UI/UX Design)</li>
 					</ul>
-					<InnovationIcon className="hidden sm:block lg:hidden absolute bottom-0 right-0 h-56" />
+					<InnovationIcon className="absolute bottom-0 right-0 hidden h-56 sm:block lg:hidden" />
 				</div>
 				<div className="hidden lg:block">
 					<InnovationIcon />
