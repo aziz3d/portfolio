@@ -23,21 +23,21 @@ export default function Footer() {
 	};
 
 	return (
-		<footer className="flex flex-col px-6 w-full bg-gray-900">
-			<div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10 md:gap-2 py-28">
+		<footer className="flex w-full flex-col bg-gray-900 px-12">
+			<div className="flex flex-col items-center justify-center gap-10 py-28 md:flex-row md:justify-between md:gap-2">
 				<div className="flex flex-col gap-10">
 					<div className="flex items-center gap-6">
-						<div className="h-32 w-32 bg-yellow-200 rounded-full" />
+						<div className="h-32 w-32 rounded-full bg-yellow-200" />
 						<div className="flex flex-col gap-2">
-							<span className="text-4xl text-gray-200 font-semibold">
+							<span className="text-4xl font-semibold text-gray-200">
 								Daniel Peñaloza
 							</span>
-							<span className="text-2xl text-gray-400 font-medium">
+							<span className="text-2xl font-medium text-gray-400">
 								Fullstack developer
 							</span>
 						</div>
 					</div>
-					<div className="flex justify-center md:justify-start items-center gap-6">
+					<div className="flex items-center justify-center gap-6 md:justify-start">
 						<Link
 							href={LINKEDIN_URL}
 							target="_blank"
@@ -65,12 +65,12 @@ export default function Footer() {
 					<Link
 						href={"/get-in-touch"}
 						title="Get in touch"
-						className="flex items-center gap-4 group"
+						className="group flex items-center gap-4"
 					>
-						<span className="text-4xl text-gray-200 font-bold group-hover:underline group-hover:underline-offset-8">
+						<span className="text-4xl font-bold text-gray-200 group-hover:underline group-hover:underline-offset-8">
 							Get in touch
 						</span>
-						<ArrowIcon className="h-14 fill-yellow-400 group-hover:ml-4 duration-200" />
+						<ArrowIcon className="h-14 fill-yellow-400 duration-200 group-hover:ml-4" />
 					</Link>
 					<div>
 						<p className="w-72 text-gray-400">
@@ -83,19 +83,19 @@ export default function Footer() {
 							name="email"
 							id="email"
 							placeholder="Email"
-							className="p-2.5 w-full border rounded-lg text-white text-sm focus:ring-primary-600 focus:border-primary-600 bg-gray-800 border-gray-700 dark:placeholder-gray-400"
+							className="focus:ring-primary-600 focus:border-primary-600 w-full rounded-lg border border-gray-700 bg-gray-800 p-2.5 text-sm text-white dark:placeholder-gray-400"
 						/>
 					</div>
 				</div>
 			</div>
 			<hr className="border-gray-400" />
-			<div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-8 py-8">
+			<div className="flex flex-col items-center justify-center gap-8 py-8 md:flex-row md:justify-between">
 				<ul className="flex flex-wrap items-center gap-8">
 					<li>
 						<Link
 							href={"/"}
 							title="Home"
-							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+							className="rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Home
 						</Link>
@@ -104,7 +104,7 @@ export default function Footer() {
 						<Link
 							href={"/about"}
 							title="About"
-							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+							className="rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							About
 						</Link>
@@ -113,7 +113,7 @@ export default function Footer() {
 						<Link
 							href={"/services"}
 							title="Services"
-							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+							className="rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Services
 						</Link>
@@ -122,7 +122,7 @@ export default function Footer() {
 						<Link
 							href={"/portfolio"}
 							title="Portfolio"
-							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+							className="rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Portfolio
 						</Link>
@@ -131,7 +131,7 @@ export default function Footer() {
 						<Link
 							href={"/get-in-touch"}
 							title="Get in touch"
-							className="text-white rounded-full hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
+							className="rounded-full text-white hover:text-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							Get in touch
 						</Link>
@@ -140,7 +140,7 @@ export default function Footer() {
 						<button
 							type="button"
 							title="Toggle dark mode"
-							className="rounded-full focus:outline-offset-4 focus:outline-yellow-400 fill-white hover:fill-yellow-400"
+							className="rounded-full fill-white hover:fill-yellow-400 focus:outline-offset-4 focus:outline-yellow-400"
 						>
 							<SunIcon className="h-6 w-6 fill-inherit" />
 						</button>
@@ -149,7 +149,7 @@ export default function Footer() {
 						<button
 							type="button"
 							title="Download CV"
-							className={`flex items-center gap-2 px-4 py-2 text-yellow-400 border-2 border-yellow-400 rounded-full focus:outline-yellow-400 hover:bg-yellow-400 hover:text-gray-950 disabled:bg-yellow-200 disabled:border-yellow-200 disabled:stroke-gray-400 group duration-150`}
+							className={`group flex items-center gap-2 rounded-full border-2 border-yellow-400 px-4 py-2 text-yellow-400 duration-150 hover:bg-yellow-400 hover:text-gray-950 focus:outline-yellow-400 disabled:border-yellow-200 disabled:bg-yellow-200 disabled:stroke-gray-400`}
 							onClick={downloadCV}
 							disabled={status}
 						>
