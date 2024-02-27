@@ -8,10 +8,23 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+			fontFamily: {
+				montserrat: ["var(--font-montserrat)"],
+			},
+			colors: {
+				waikawa: {
+					50: "#F2F7FB",
+					100: "#E7F0F8",
+					200: "#D3E2F2",
+					300: "#B9CFE8",
+					400: "#9CB6DD",
+					500: "#839DD1",
+					600: "#6A7FC1",
+					DEFAULT: "#6374AE",
+					800: "#4A5989",
+					900: "#414E6E",
+					950: "#262C40",
+				}
 			},
 			borderRadius: {
 				"4xl": "2rem",
@@ -27,5 +40,6 @@ const config: Config = {
 		},
 	},
 	plugins: [],
+	darkMode: "class",
 };
 export default config;
