@@ -37,6 +37,9 @@ const config: Config = {
 				103: "1.03",
 				104: "1.04",
 			},
+			screens: {
+				"3xl": "2000px",
+			},
 		},
 	},
 	plugins: [],
