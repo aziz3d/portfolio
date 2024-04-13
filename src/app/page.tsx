@@ -1,15 +1,12 @@
 import {
-	ArrowUpRightSquareIcon,
 	ChevronIcon,
 	FiverrIcon,
-	GitHubIcon,
 	ImagePlaceholder,
 	LinkedInFullIcon,
-	LinkedInIcon,
 	LongArrowIcon,
 } from "@/assets/svg";
-import { ExperienceCard } from "@/components";
-import { EXPERIENCE, FIVERR_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import { ContactSection, ExperienceSection, ProjectCard } from "@/components";
+import { FIVERR_URL, LINKEDIN_URL, PROJECTS } from "@/constants";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,10 +14,10 @@ export default function Home() {
 		<>
 			<section
 				id="hero"
-				className="flex w-full items-center justify-center py-48"
+				className="flex w-full items-center justify-center py-24 md:py-48"
 			>
 				<div className="flex w-full max-w-[1280px] items-center gap-24 px-4 max-lg:flex-col">
-					<div className="flex w-screen max-w-[521px] flex-col gap-7">
+					<div className="flex w-full max-w-[521px] flex-col gap-7">
 						<div className="flex items-center gap-4">
 							<Link
 								href={LINKEDIN_URL}
@@ -85,7 +82,7 @@ export default function Home() {
 			</section>
 			<section
 				id="projects"
-				className="flex w-full flex-col items-center justify-center gap-8 py-48"
+				className="flex w-full flex-col items-center justify-center gap-8 px-4 py-24 md:py-48"
 			>
 				<div className="flex flex-col items-center gap-6">
 					<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
@@ -96,196 +93,18 @@ export default function Home() {
 						skills
 					</p>
 				</div>
-				<div className="grid grid-cols-2 gap-6 duration-300 ease-out xl:grid-cols-3 2xl:grid-cols-4">
-					<div className="flex max-w-[368px] flex-col gap-4">
-						<div className="flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
-							<ImagePlaceholder />
-						</div>
-						<div className="flex gap-2">
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Front-end
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Figma
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Back-end
-							</span>
-						</div>
-						<span className="font-montserrat text-2xl font-bold text-neutral-800">
-							Project title
-						</span>
-						<p className="line-clamp-3 font-montserrat text-lg text-neutral-500">
-							Description of the project. It can be a bit longer
-							to showcase the description.
-						</p>
-						<div className="flex gap-4">
-							<button
-								type="button"
-								title="Details"
-								className="flex items-center justify-center gap-2 rounded-lg bg-indigo-400 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-300"
-							>
-								Details
-							</button>
-							<button
-								type="button"
-								title="Open"
-								className="text-indigo flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold hover:text-indigo-400"
-							>
-								Open
-								<ArrowUpRightSquareIcon className="h-4 w-4" />
-							</button>
-						</div>
-					</div>
-					<div className="flex max-w-[368px] flex-col gap-4">
-						<div className="flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
-							<ImagePlaceholder />
-						</div>
-						<div className="flex gap-2">
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Front-end
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Figma
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Back-end
-							</span>
-						</div>
-						<span className="font-montserrat text-2xl font-bold text-neutral-800">
-							Project title
-						</span>
-						<p className="line-clamp-3 font-montserrat text-lg text-neutral-500">
-							Description of the project. It can be a bit longer
-							to showcase the description.
-						</p>
-						<div className="flex gap-4">
-							<button
-								type="button"
-								title="Details"
-								className="flex items-center justify-center gap-2 rounded-lg bg-indigo-400 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-300"
-							>
-								Details
-							</button>
-							<button
-								type="button"
-								title="Open"
-								className="text-indigo flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold hover:text-indigo-400"
-							>
-								Open
-								<ArrowUpRightSquareIcon className="h-4 w-4" />
-							</button>
-						</div>
-					</div>
-					<div className="flex max-w-[368px] flex-col gap-4">
-						<div className="flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
-							<ImagePlaceholder />
-						</div>
-						<div className="flex gap-2">
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Front-end
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Figma
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Back-end
-							</span>
-						</div>
-						<span className="font-montserrat text-2xl font-bold text-neutral-800">
-							Project title
-						</span>
-						<p className="line-clamp-3 font-montserrat text-lg text-neutral-500">
-							Description of the project. It can be a bit longer
-							to showcase the description.
-						</p>
-						<div className="flex gap-4">
-							<button
-								type="button"
-								title="Details"
-								className="flex items-center justify-center gap-2 rounded-lg bg-indigo-400 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-300"
-							>
-								Details
-							</button>
-							<button
-								type="button"
-								title="Open"
-								className="text-indigo flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold hover:text-indigo-400"
-							>
-								Open
-								<ArrowUpRightSquareIcon className="h-4 w-4" />
-							</button>
-						</div>
-					</div>
-					<div className="flex max-w-[368px] flex-col gap-4">
-						<div className="flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
-							<ImagePlaceholder />
-						</div>
-						<div className="flex gap-2">
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Front-end
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Figma
-							</span>
-							<span className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50">
-								Back-end
-							</span>
-						</div>
-						<span className="font-montserrat text-2xl font-bold text-neutral-800">
-							Project title
-						</span>
-						<p className="line-clamp-3 font-montserrat text-lg text-neutral-500">
-							Description of the project. It can be a bit longer
-							to showcase the description.
-						</p>
-						<div className="flex gap-4">
-							<button
-								type="button"
-								title="Details"
-								className="flex items-center justify-center gap-2 rounded-lg bg-indigo-400 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-300"
-							>
-								Details
-							</button>
-							<button
-								type="button"
-								title="Open"
-								className="text-indigo flex items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold hover:text-indigo-400"
-							>
-								Open
-								<ArrowUpRightSquareIcon className="h-4 w-4" />
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section
-				id="experience"
-				className="flex w-full flex-col items-center justify-center gap-8 bg-indigo-100 px-4 py-48"
-			>
-				<div className="flex flex-col items-center gap-6">
-					<h1 className="font-montserrat text-5xl font-bold text-indigo-900">
-						Experience
-					</h1>
-					<p className="font-montserrat text-xl font-medium text-indigo-500">
-						This is my work experience in the IT industry
-					</p>
-				</div>
-				<div className="flex flex-col items-center">
-					{EXPERIENCE.map((item, index) => (
-						<ExperienceCard
-							key={item.jobTitle}
-							item={item}
-							isLast={index === EXPERIENCE.length - 1}
-						/>
+				<div className="grid gap-6 duration-300 ease-out md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+					{PROJECTS.map((project) => (
+						<ProjectCard key={project.title} project={project} />
 					))}
 				</div>
 			</section>
+			<ExperienceSection />
 			<section
 				id="testimonials"
 				className="flex w-full flex-col items-center justify-center gap-8 px-4 py-48"
 			>
-				<div className="flex flex-col items-center gap-6">
+				<div className="flex flex-col gap-6 md:items-center">
 					<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
 						Testiomials
 					</h1>
@@ -343,77 +162,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section
-				id="work-with-me"
-				className="flex w-full items-center justify-center py-48"
-			>
-				<div className="flex w-full max-w-[1280px] items-center gap-24 max-lg:flex-col max-lg:px-4">
-					<form action="" className="flex w-full flex-col gap-6">
-						<div className="grid grid-cols-2 gap-6">
-							<input
-								type="text"
-								name="firstName"
-								id="firstName"
-								placeholder="First name"
-								className="col-span-1 rounded-lg px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-								autoComplete="given-name"
-							/>
-							<input
-								type="text"
-								name="lastName"
-								id="lastName"
-								placeholder="Last name"
-								className="col-span-1 rounded-lg px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-								autoComplete="family-name"
-							/>
-							<input
-								type="email"
-								name="email"
-								id="email"
-								placeholder="Email"
-								className="col-span-2 rounded-lg px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-								autoComplete="email"
-							/>
-							<textarea
-								name="message"
-								id="message"
-								cols={30}
-								rows={10}
-								placeholder="Message"
-								className="col-span-2 max-h-[150px] rounded-lg px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-							></textarea>
-							<button
-								type="submit"
-								title="Submit"
-								className="col-span-2 rounded-lg bg-indigo-500 px-4 py-2.5 font-semibold leading-6 text-indigo-100 hover:bg-indigo-400"
-							>
-								Submit
-							</button>
-						</div>
-					</form>
-					<div className="flex flex-col items-center justify-center gap-8">
-						<h1 className="font-montserrat text-5xl font-bold text-indigo-900">
-							Let&apos;s connect
-						</h1>
-						<span className="font-montserrat text-xl text-indigo-500">
-							I&apos;m always open to new opportunities. Feel free
-							to reach out to me using the form on the left or
-							through my social media profiles below.
-						</span>
-						<div className="flex items-center gap-4">
-							<Link href={LINKEDIN_URL} title="LinkedIn">
-								<LinkedInIcon className="hover:fill-indigo h-6 w-6 fill-indigo-950" />
-							</Link>
-							<Link href={GITHUB_URL} title="Github">
-								<GitHubIcon className="hover:fill-indigo h-6 w-6 fill-indigo-950" />
-							</Link>
-							<Link href={FIVERR_URL} title="Fiverr">
-								<FiverrIcon className="hover:fill-indigo h-5 fill-indigo-950 hover:opacity-80" />
-							</Link>
-						</div>
-					</div>
-				</div>
-			</section>
+			<ContactSection />
 		</>
 	);
 }

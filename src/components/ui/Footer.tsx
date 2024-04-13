@@ -9,7 +9,7 @@ export default function Footer() {
 					<span className="font-montserrat font-medium leading-6 text-neutral-500">
 						© 2024 Daniel Peñaloza. All rights reserved.
 					</span>
-					<div className="flex gap-6">
+					<div className="flex flex-wrap gap-6 px-4">
 						<Link
 							href={"/projects"}
 							rel="noopener noreferrer"

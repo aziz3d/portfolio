@@ -8,6 +8,17 @@ const GITHUB_URL = "https://github.com/DanielPenalozaB";
 
 const NPM_URL = "https://www.npmjs.com/~daniel-penaloza";
 
+const PROJECTS = [
+	{
+		title: "Portfolio",
+		description: "This is my portfolio website. It's built with Next.js and Tailwind CSS.",
+		tags: ["Front-end", "Back-end", "Figma"],
+		image: "/portfolio.png",
+		url: "https://github.com/DanielPenalozaB/portfolio",
+		blogUrl: "/blog/portfolio",
+	}
+]
+
 const EXPERIENCE = [
 	{
 		jobTitle: "Junior Developer",
@@ -48,4 +59,4 @@ const EXPERIENCE = [
 	}
 ]
 
-export { LINKEDIN_URL, GITHUB_URL, NPM_URL, FIVERR_URL, EXPERIENCE };
+export { LINKEDIN_URL, GITHUB_URL, NPM_URL, FIVERR_URL, PROJECTS, EXPERIENCE };
