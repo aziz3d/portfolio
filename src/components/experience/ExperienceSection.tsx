@@ -5,9 +5,10 @@ export default function ExperienceSection() {
 	return (
 		<section
 			id="experience"
-			className="flex w-full flex-col items-center justify-center gap-8 bg-indigo-100 px-4 py-24 md:py-48"
+			className="relative flex w-full flex-col items-center justify-center gap-8 overflow-hidden bg-indigo-100 px-4 py-24 md:py-48"
 		>
-			<div className="flex flex-col gap-6 md:items-center">
+			<div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full bg-gradient-to-b from-transparent to-indigo-100/80" />
+			<div className="z-10 flex flex-col gap-6 md:items-center">
 				<h1 className="font-montserrat text-5xl font-bold text-indigo-900">
 					Experience
 				</h1>
@@ -15,7 +16,7 @@ export default function ExperienceSection() {
 					This is my work experience in the IT industry
 				</p>
 			</div>
-			<div className="flex w-full flex-col items-center overflow-hidden">
+			<div className="z-10 flex w-full flex-col items-center overflow-hidden">
 				{EXPERIENCE.map((item, index) => (
 					<ExperienceCard
 						key={item.jobTitle}
