@@ -5,7 +5,7 @@ import {
 	LinkedInFullIcon,
 	LongArrowIcon,
 } from "@/assets/svg";
-import { ContactSection, ExperienceSection, ProjectCard } from "@/components";
+import { ContactSection, ExperienceSection, ProjectCard, ProjectSection } from "@/components";
 import { FIVERR_URL, LINKEDIN_URL, PROJECTS } from "@/constants";
 import Link from "next/link";
 
@@ -80,25 +80,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section
-				id="projects"
-				className="flex w-full flex-col items-center justify-center gap-8 px-4 py-24 md:py-48"
-			>
-				<div className="flex flex-col items-center gap-6">
-					<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
-						Featured projects
-					</h1>
-					<p className="font-montserrat text-xl font-medium text-neutral-500">
-						Here are some of my best projects that showcase my
-						skills
-					</p>
-				</div>
-				<div className="grid gap-6 duration-300 ease-out md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-					{PROJECTS.map((project) => (
-						<ProjectCard key={project.title} project={project} />
-					))}
-				</div>
-			</section>
+			<ProjectSection />
 			<ExperienceSection />
 			<section
 				id="testimonials"
@@ -106,7 +88,7 @@ export default function Home() {
 			>
 				<div className="flex flex-col gap-6 md:items-center">
 					<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
-						Testiomials
+						Testimonials
 					</h1>
 					<p className="font-montserrat text-xl font-medium text-neutral-500">
 						This is my work experience in the IT industry
