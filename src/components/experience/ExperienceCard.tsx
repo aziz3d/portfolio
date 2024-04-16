@@ -22,7 +22,7 @@ export default function ExperienceCard({
 	} = item;
 
 	return (
-		<div key={item.jobTitle} className="flex w-full gap-4">
+		<div key={item.jobTitle} className="flex gap-4 max-sm:w-full">
 			{isLast ? (
 				<div className="min-w-6 flex flex-col items-center">
 					<span className="min-w-1 h-4 min-h-[1rem] w-1 bg-indigo-300" />
