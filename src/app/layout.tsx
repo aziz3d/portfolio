@@ -29,7 +29,7 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				id="layout"
-				className={`${inter.className} ${montserrat.className} bg-gradient-to-b to-indigo-400 via-indigo-100 from-white from-85% overflow-x-hidden`}
+				className={`${inter.className} ${montserrat.className} bg-white`}
 			>
 				<Providers>
 					<Navbar />

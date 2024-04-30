@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: ProjectCardInterface) {
 					tags.map((tag) => (
 						<span
 							key={tag}
-							className="rounded-lg bg-indigo-400 px-1.5 py-1 font-montserrat text-sm font-semibold text-indigo-50"
+							className="rounded-lg bg-indigo-300 px-1.5 py-1 font-montserrat text-sm font-medium text-indigo-50"
 						>
 							{tag}
 						</span>

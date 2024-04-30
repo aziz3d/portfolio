@@ -308,10 +308,18 @@ export function BarsMenuIcon({ ...restProps }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
 			viewBox="0 0 24 24"
+			strokeWidth={1.5}
+			stroke="currentColor"
+			className="h-6 w-6"
 			{...restProps}
 		>
-			<path d="M0,4c0-.55,.45-1,1-1H18c.55,0,1,.45,1,1s-.45,1-1,1H1c-.55,0-1-.45-1-1Zm18,15H1c-.55,0-1,.45-1,1s.45,1,1,1H18c.55,0,1-.45,1-1s-.45-1-1-1Zm5-8H6c-.55,0-1,.45-1,1s.45,1,1,1H23c.55,0,1-.45,1-1s-.45-1-1-1Z" />
+			<path
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+			/>
 		</svg>
 	);
 }
@@ -320,10 +328,18 @@ export function XMarkIcon({ ...restProps }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
 			viewBox="0 0 24 24"
+			strokeWidth={1.5}
+			stroke="currentColor"
+			className="h-6 w-6"
 			{...restProps}
 		>
-			<path d="M13.292,12L21.774,1.633c.35-.427,.286-1.057-.142-1.407-.428-.348-1.057-.287-1.407,.142L12,10.421,3.774,.367c-.351-.429-.98-.49-1.407-.142-.428,.351-.491,.98-.142,1.407L10.708,12,2.226,22.367c-.35,.427-.286,1.057,.142,1.407,.425,.348,1.056,.288,1.407-.142L12,13.579l8.226,10.053c.351,.43,.982,.489,1.407,.142,.428-.351,.491-.98,.142-1.407L13.292,12Z" />
+			<path
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				d="M6 18 18 6M6 6l12 12"
+			/>
 		</svg>
 	);
 }

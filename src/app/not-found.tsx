@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Custom404() {
 	return (
-		<div className="flex h-[calc(100vh-212px)] flex-col items-center justify-center">
+		<div className="flex h-screen flex-col items-center justify-center">
 			<div className="relative flex flex-col items-center justify-center overflow-hidden">
 				<div className="absolute bottom-0 left-0 right-0 h-48 w-full bg-gradient-to-b from-white/60 via-white to-white" />
 				<span className="font-montserrat text-[10rem] font-bold text-indigo-400">

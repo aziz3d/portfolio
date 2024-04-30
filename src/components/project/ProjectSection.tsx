@@ -6,7 +6,7 @@ export default function ProjectSection() {
 	return (
 		<section
 			id="projects"
-			className="flex w-full flex-col items-center justify-center gap-8 px-4 py-24 md:py-48"
+			className="flex w-full flex-col items-center justify-center gap-8 overflow-hidden px-4 py-24 md:py-48"
 		>
 			<div className="flex flex-col items-center gap-6">
 				<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
