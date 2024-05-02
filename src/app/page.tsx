@@ -151,7 +151,7 @@ export default function Home() {
 						</button>
 					</div>
 				</div>
-				<div className="absolute -top-72 left-0 z-0 h-[1920px] w-full overflow-hidden fill-indigo-300 sm:left-1/2 sm:-translate-x-1/2">
+				<div className="absolute -top-96 left-0 z-0 h-[1920px] w-full overflow-hidden fill-indigo-300 sm:left-1/2 sm:-translate-x-1/2">
 					<svg
 						width="1507.93"
 						height="2160"

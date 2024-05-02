@@ -12,9 +12,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-	title: "Daniel Peñaloza | Developer",
+	title: "Juan Daniel Peñaloza Brito | Software Developer",
 	description:
-		"I'm a fullstack developer specializing in web and mobile app development. See my projects and expertise here.",
+		"I'm a fullstack software developer specializing in web and mobile app development. See my projects and expertise here.",
 	icons: {
 		icon: "/icon.svg",
 	},
@@ -28,7 +28,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				id="layout"
 				className={`${inter.className} ${montserrat.className} bg-white`}
 			>
 				<Providers>

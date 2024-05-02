@@ -16,7 +16,7 @@ export default function ProjectSection() {
 					Here are some of my best projects that showcase my skills
 				</p>
 			</div>
-			<div className="grid gap-6 duration-300 ease-out md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+			<div className="flex flex-wrap justify-center gap-6">
 				{PROJECTS.map((project) => (
 					<ProjectCard key={project.title} project={project} />
 				))}
