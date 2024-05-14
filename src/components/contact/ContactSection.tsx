@@ -9,7 +9,7 @@ export default function ContactSection() {
 			id="work-with-me"
 			className="flex w-full items-center justify-center py-48"
 		>
-			<div className="z-10 flex w-full max-w-[1280px] items-center gap-24 max-xl:px-4 max-lg:flex-col max-md:flex-col-reverse">
+			<div className="z-10 flex w-full max-w-[1000px] items-center gap-24 max-xl:px-4 max-lg:flex-col max-md:flex-col-reverse">
 				<form action="" className="flex w-full flex-col gap-6">
 					<div className="grid grid-cols-2 gap-6">
 						<input

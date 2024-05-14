@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer() {
 	return (
 		<footer className="flex min-h-[88px] w-full items-center justify-center gap-12 bg-indigo-500 text-white">
-			<div className="flex max-w-[1280px] shrink grow basis-0 flex-col items-start justify-start gap-8 py-8">
+			<div className="flex max-w-[1000px] shrink grow basis-0 flex-col items-start justify-start gap-8 py-8">
 				<div className="flex items-center justify-between gap-6 self-stretch px-4 max-xl:flex-col-reverse">
 					<span className="font-montserrat font-medium leading-6 xl:whitespace-nowrap">
 						© 2024 Daniel Peñaloza. All rights reserved.

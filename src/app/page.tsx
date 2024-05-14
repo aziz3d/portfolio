@@ -21,7 +21,7 @@ export default function Home() {
 				id="hero"
 				className="relative flex w-full items-center justify-center overflow-hidden py-24 md:py-48"
 			>
-				<div className="flex w-full max-w-[1280px] items-center gap-24 px-4 max-lg:flex-col">
+				<div className="flex w-full max-w-[1000px] items-center gap-24 px-4 max-lg:flex-col">
 					<div className="flex w-full max-w-[521px] flex-col gap-7">
 						<div className="flex items-center gap-4">
 							<Link
@@ -49,7 +49,7 @@ export default function Home() {
 								</div>
 							</Link>
 						</div>
-						<h1 className="font-montserrat text-[64px] font-bold leading-[4rem] text-neutral-800">
+						<h1 className="font-montserrat text-5xl font-bold text-neutral-800">
 							Hi, I&apos;m a Web & Mobile Developer
 						</h1>
 						<span className="text-xl font-medium leading-6 text-neutral-500">
