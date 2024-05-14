@@ -31,7 +31,7 @@ export default function MobileMenu() {
 			{isOpen && (
 				<div className="fixed left-0 right-0 top-0 z-40 flex h-screen w-full flex-col items-center justify-center gap-8 bg-white/40 backdrop-blur-lg">
 					<div className="fixed right-0 top-0 z-50 flex w-full gap-4 p-4">
-						<div className="flex w-full flex-col gap-4 rounded-xl bg-indigo-100 p-4 text-black">
+						<div className="flex h-[calc(100vh-2rem)] w-full flex-col gap-4 rounded-xl bg-white p-4 text-neutral-500">
 							<Link
 								href={"/projects"}
 								rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export default function MobileMenu() {
 						<button
 							title="Close menu"
 							type="button"
-							className="flex w-[3.5rem] min-w-[3.5rem] items-center justify-center p-2 text-neutral-500 hover:text-indigo-500 md:hidden"
+							className="flex h-fit w-[3.5rem] min-w-[3.5rem] items-center justify-center p-2 text-neutral-500 hover:text-indigo-500 md:hidden"
 							onClick={handleMenuState}
 						>
 							<XMarkIcon className="h-8 min-h-[2rem] w-8 min-w-[2rem]" />
