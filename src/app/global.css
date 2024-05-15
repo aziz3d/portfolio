@@ -18,3 +18,8 @@ html {
     background-image: url(/exp_doodle.svg);
     background-blend-mode: color-burn;
 }
+
+.radial-mask {
+    -webkit-mask-image: radial-gradient(24rem 24rem at center, white, transparent);
+    mask-image: radial-gradient(24rem 24rem at center, white, transparent);
+}

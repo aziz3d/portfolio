@@ -1,6 +1,7 @@
 import {
 	ChevronIcon,
 	FiverrIcon,
+	GridIcon,
 	ImagePlaceholder,
 	LinkedInFullIcon,
 	LongArrowIcon,
@@ -87,6 +88,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="radial-gradient absolute right-[calc(50%-1920px)] top-[calc(100%-1920px)] z-[-1] h-[1920px] w-[1920px] rounded-full" />
+				<GridIcon className="radial-mask absolute -left-60 -top-[3.3rem] -z-10 h-[37rem] w-full opacity-25" />
 			</section>
 			<ProjectSection />
 			<ExperienceSection />
