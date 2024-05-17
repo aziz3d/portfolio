@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
 	return (
 		<nav className="fixed left-0 right-0 top-0 z-30 flex h-[88px] w-full items-center justify-center gap-12 bg-white/40 backdrop-blur-lg">
-			<div className="flex max-w-[1280px] shrink grow basis-0 flex-col items-start justify-start gap-8 px-4 py-8">
+			<div className="flex max-w-[1000px] shrink grow basis-0 flex-col items-start justify-start gap-8 px-4 py-8">
 				<div className="flex items-center justify-between gap-6 self-stretch">
 					<Link
 						href={"/"}

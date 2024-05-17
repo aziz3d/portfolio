@@ -1,8 +1,8 @@
 // All icons from https://www.flaticon.com/
 
-import React from "react";
+import React, { SVGAttributes } from "react";
 
-export function SunIcon({ ...restProps }) {
+export function SunIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ export function SunIcon({ ...restProps }) {
 	);
 }
 
-export function MoonIcon({ ...restProps }) {
+export function MoonIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export function MoonIcon({ ...restProps }) {
 	);
 }
 
-export function DownloadIcon({ ...restProps }) {
+export function DownloadIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export function DownloadIcon({ ...restProps }) {
 	);
 }
 
-export function ArrowIcon({ ...restProps }) {
+export function ArrowIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export function ArrowIcon({ ...restProps }) {
 	);
 }
 
-export function NpmIcon({ ...restProps }) {
+export function NpmIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg viewBox="0 0 780 250" aria-hidden="true" {...restProps}>
 			<path d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path>
@@ -64,7 +64,7 @@ export function NpmIcon({ ...restProps }) {
 	);
 }
 
-export function EnvelopeOpenIcon({ ...restProps }) {
+export function EnvelopeOpenIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export function EnvelopeOpenIcon({ ...restProps }) {
 	);
 }
 
-export function PaperPlaneIcon({ ...restProps }) {
+export function PaperPlaneIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ export function PaperPlaneIcon({ ...restProps }) {
 	);
 }
 
-export function JavaScriptIcon({ ...restProps }) {
+export function JavaScriptIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ export function JavaScriptIcon({ ...restProps }) {
 	);
 }
 
-export function ReactIcon({ ...restProps }) {
+export function ReactIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@ export function ReactIcon({ ...restProps }) {
 	);
 }
 
-export function VercelIcon({ ...restProps }) {
+export function VercelIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg aria-label="Vercel logomark" viewBox="0 0 74 64" {...restProps}>
 			<path
@@ -126,7 +126,7 @@ export function VercelIcon({ ...restProps }) {
 	);
 }
 
-export function PythonIcon({ ...restProps }) {
+export function PythonIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ export function PythonIcon({ ...restProps }) {
 	);
 }
 
-export function NodejsIcon({ ...restProps }) {
+export function NodejsIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ export function NodejsIcon({ ...restProps }) {
 	);
 }
 
-export function FigmaIcon({ ...restProps }) {
+export function FigmaIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@ export function FigmaIcon({ ...restProps }) {
 	);
 }
 
-export function PHPIcon({ ...restProps }) {
+export function PHPIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export function PHPIcon({ ...restProps }) {
 	);
 }
 
-export function HTMLIcon({ ...restProps }) {
+export function HTMLIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +186,7 @@ export function HTMLIcon({ ...restProps }) {
 	);
 }
 
-export function CSSIcon({ ...restProps }) {
+export function CSSIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ export function CSSIcon({ ...restProps }) {
 	);
 }
 
-export function SassIcon({ ...restProps }) {
+export function SassIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +213,7 @@ export function SassIcon({ ...restProps }) {
 	);
 }
 
-export function TailwindIcon({ ...restProps }) {
+export function TailwindIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@ export function TailwindIcon({ ...restProps }) {
 	);
 }
 
-export function AstroIcon({ ...restProps }) {
+export function AstroIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -240,7 +240,7 @@ export function AstroIcon({ ...restProps }) {
 	);
 }
 
-export function AngularIcon({ ...restProps }) {
+export function AngularIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -252,7 +252,7 @@ export function AngularIcon({ ...restProps }) {
 	);
 }
 
-export function GitIcon({ ...restProps }) {
+export function GitIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +264,7 @@ export function GitIcon({ ...restProps }) {
 	);
 }
 
-export function AzureIcon({ ...restProps }) {
+export function AzureIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +279,7 @@ export function AzureIcon({ ...restProps }) {
 	);
 }
 
-export function ServerIcon({ ...restProps }) {
+export function ServerIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -291,7 +291,7 @@ export function ServerIcon({ ...restProps }) {
 	);
 }
 
-export function ArrowUpRightSquareIcon({ ...restProps }) {
+export function ArrowUpRightSquareIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +304,7 @@ export function ArrowUpRightSquareIcon({ ...restProps }) {
 	);
 }
 
-export function BarsMenuIcon({ ...restProps }) {
+export function BarsMenuIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,7 @@ export function BarsMenuIcon({ ...restProps }) {
 	);
 }
 
-export function XMarkIcon({ ...restProps }) {
+export function XMarkIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -345,7 +345,7 @@ export function XMarkIcon({ ...restProps }) {
 }
 
 // From DrawKit
-export function LarryIcon({ ...restProps }) {
+export function LarryIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -518,7 +518,7 @@ export function LarryIcon({ ...restProps }) {
 }
 
 // From ManyPixels
-export function InnovationIcon({ ...restProps }) {
+export function InnovationIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -1028,7 +1028,7 @@ export function InnovationIcon({ ...restProps }) {
 	);
 }
 
-export function ChevronIcon({ ...restProps }) {
+export function ChevronIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -1041,7 +1041,7 @@ export function ChevronIcon({ ...restProps }) {
 	);
 }
 
-export function CollaborateIcon({ ...restProps }) {
+export function CollaborateIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			{...restProps}
@@ -1055,7 +1055,7 @@ export function CollaborateIcon({ ...restProps }) {
 	);
 }
 
-export function GitHubIcon({ ...restProps }) {
+export function GitHubIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			{...restProps}
@@ -1084,7 +1084,7 @@ export function GitHubIcon({ ...restProps }) {
 	);
 }
 
-export function LinkedInIcon({ ...restProps }) {
+export function LinkedInIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			{...restProps}
@@ -1106,7 +1106,7 @@ export function LinkedInIcon({ ...restProps }) {
 	);
 }
 
-export function LinkedInFullIcon({ ...restProps }) {
+export function LinkedInFullIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
@@ -1125,7 +1125,7 @@ export function LinkedInFullIcon({ ...restProps }) {
 	);
 }
 
-export function ImagePlaceholder({ ...restProps }) {
+export function ImagePlaceholder(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			{...restProps}
@@ -1256,7 +1256,7 @@ export function ImagePlaceholder({ ...restProps }) {
 	);
 }
 
-export function LongArrowIcon({ ...restProps }) {
+export function LongArrowIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			width="24"
@@ -1278,7 +1278,7 @@ export function LongArrowIcon({ ...restProps }) {
 	);
 }
 
-export function FiverrIcon({ ...restProps }) {
+export function FiverrIcon(restProps: SVGAttributes<SVGElement>) {
 	return (
 		<svg
 			viewBox="0 0 89 27"
@@ -1291,6 +1291,1054 @@ export function FiverrIcon({ ...restProps }) {
 			</g>
 			<g fill="#1dbf73">
 				<path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+			</g>
+		</svg>
+	);
+}
+
+export function FiverrFlatIcon(restProps: SVGAttributes<SVGElement>) {
+	return (
+		<svg
+			viewBox="0 0 89 27"
+			fill="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...restProps}
+		>
+			<g>
+				<path d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z"></path>
+			</g>
+			<g >
+				<path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+			</g>
+		</svg>
+	);
+}
+
+export function GridIcon(restProps: SVGAttributes<SVGElement>) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			version="1.1"
+			viewBox="0 0 800 800"
+			width="800"
+			height="800"
+			{...restProps}
+		>
+			<g stroke-width="0.5" stroke="hsl(261, 60%, 38%)" fill="none">
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="0"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="66.66666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="133.33333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="200"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="266.6666666666667"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="333.33333333333337"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="400.00000000000006"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="466.66666666666674"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="533.3333333333334"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="600"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="666.6666666666666"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="733.3333333333333"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="0"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="66.66666666666667"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="133.33333333333334"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="200"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="266.6666666666667"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="333.33333333333337"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="400.00000000000006"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="466.66666666666674"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="533.3333333333334"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="600"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="666.6666666666666"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="733.3333333333333"
+					y="799.9999999999999"
+				></rect>
+				<rect
+					width="66.66666666666667"
+					height="66.66666666666667"
+					x="799.9999999999999"
+					y="799.9999999999999"
+				></rect>
 			</g>
 		</svg>
 	);

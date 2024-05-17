@@ -1,4 +1,5 @@
 import { ArrowUpRightSquareIcon, ImagePlaceholder } from "@/assets/svg";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +9,7 @@ interface ProjectInterface {
 	tags: string[];
 	image: string;
 	url: string;
-	blogUrl: string
+	blogUrl: string;
 }
 
 interface ProjectCardInterface {
@@ -19,9 +20,50 @@ export default function ProjectCard({ project }: ProjectCardInterface) {
 	const { title, description, image, url, blogUrl, tags } = project;
 
 	return (
-		<div className="flex max-w-[368px] flex-col gap-4">
-			<div className="flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
+		<div className="group flex max-w-[368px] flex-col gap-4">
+			{/*<div className="relative flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-200">
+				<div className="absolute right-0 top-0 h-44 w-44 rounded-full bg-indigo-400 blur-3xl" />
 				<ImagePlaceholder />
+	</div>*/}
+			<div className="relative flex h-[257px] w-full items-center justify-center overflow-hidden rounded-lg bg-neutral-100">
+				<div className="absolute left-1/2 top-1/2 z-10 grid h-fit w-[464px] min-w-[464px] -translate-x-1/2 -translate-y-1/2 rotate-12 -skew-x-[12deg] -skew-y-2 grid-cols-2 gap-4 duration-300 ease-out group-hover:rotate-0 group-hover:skew-y-[8deg] group-hover:scale-125">
+					<div className="h-32 w-56 min-w-[14rem] overflow-hidden rounded-md drop-shadow-lg duration-300 ease-out group-hover:drop-shadow-2xl">
+						<Image
+							src={"/projects/home0.jpeg"}
+							alt={title}
+							width={368}
+							height={257}
+							className="h-full w-full rounded-md object-cover"
+						/>
+					</div>
+					<div className="h-32 w-56 min-w-[14rem] overflow-hidden rounded-md drop-shadow-lg duration-300 ease-out group-hover:drop-shadow-2xl">
+						<Image
+							src={"/projects/home1.jpeg"}
+							alt={title}
+							width={368}
+							height={257}
+							className="h-full w-full rounded-md object-cover"
+						/>
+					</div>
+					<div className="h-32 w-56 min-w-[14rem] overflow-hidden rounded-md drop-shadow-lg duration-300 ease-out group-hover:drop-shadow-2xl">
+						<Image
+							src={"/projects/home2.jpeg"}
+							alt={title}
+							width={368}
+							height={257}
+							className="h-full w-full rounded-md object-cover"
+						/>
+					</div>
+					<div className="h-32 w-56 min-w-[14rem] overflow-hidden rounded-md drop-shadow-lg duration-300 ease-out group-hover:drop-shadow-2xl">
+						<Image
+							src={"/projects/projects.jpeg"}
+							alt={title}
+							width={368}
+							height={257}
+							className="h-full w-full rounded-md object-cover"
+						/>
+					</div>
+				</div>
 			</div>
 			<div className="flex gap-2">
 				{tags &&
