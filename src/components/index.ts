@@ -6,7 +6,6 @@ export { default as ExperienceSection } from './experience/ExperienceSection';
 export { default as ProjectCard } from './project/ProjectCard';
 export { default as ProjectSection } from './project/ProjectSection';
 export { default as Footer } from './ui/Footer';
-export { default as LanguageOrbit } from './ui/LanguageOrbit';
 export { default as MobileMenu } from './ui/MobileMenu';
 export { default as Navbar } from './ui/Navbar';
 export { default as ThemeSwitcher } from './ui/ThemeSwitcher';
