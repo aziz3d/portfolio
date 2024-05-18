@@ -18,7 +18,7 @@ export default function Footer() {
 							Projects
 						</Link>
 						<Link
-							href={"#experience"}
+							href={"/#experience"}
 							rel="noopener noreferrer"
 							title="Experience"
 							className="font-montserrat font-medium leading-6 hover:text-indigo-200"
@@ -26,7 +26,7 @@ export default function Footer() {
 							Experience
 						</Link>
 						<Link
-							href={"#work-with-me"}
+							href={"/#work-with-me"}
 							rel="noopener noreferrer"
 							title="Work with me"
 							className="font-montserrat font-medium leading-6 hover:text-indigo-200"
