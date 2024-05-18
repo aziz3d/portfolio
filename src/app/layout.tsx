@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Open_Sans, Montserrat } from "next/font/google";
 import "./global.css";
 
 import Providers from "./providers";
 import { Footer, Navbar } from "@/components";
 
-const inter = Inter({ subsets: ["latin"] });
+const opensans = Open_Sans({ subsets: ["latin"] });
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
+	variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				className={`${inter.className} ${montserrat.className} bg-white`}
+				className={`${opensans.className} ${montserrat.variable} bg-white`}
 			>
 				<Providers>
 					<Navbar />
