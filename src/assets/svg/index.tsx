@@ -1324,7 +1324,7 @@ export function GridIcon(restProps: SVGAttributes<SVGElement>) {
 			height="800"
 			{...restProps}
 		>
-			<g stroke-width="0.5" stroke="hsl(261, 60%, 38%)" fill="none">
+			<g strokeWidth="0.5" stroke="hsl(261, 60%, 38%)" fill="none">
 				<rect
 					width="66.66666666666667"
 					height="66.66666666666667"
