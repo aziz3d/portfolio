@@ -5,8 +5,7 @@ import { useFormik } from "formik";
 import React from "react";
 
 export default function ContactForm() {
-	const onSubmit = async (values) => {
-		console.log(values);
+	const onSubmit = async () => {
 	};
 
 	const {
