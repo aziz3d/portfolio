@@ -22,8 +22,8 @@ const PROJECTS = [
 const EXPERIENCE = [
 	{
 		jobTitle: "Junior Developer",
-		description: "I work as a software developer, creating business applications for all the internal needs of the business group using web technologies as React.js, Next.js, Astro and mobile using Flutter.",
-		startDate: "2024-03-01",
+		description: "Led a team of 5 developers in building 16 real estate web projects, managing the entire lifecycle from planning to launch using Agile methods.Ensured project goals, timelines, and budgets were met.Beyond development, I managed servers, designed mockups with Figma, and integrated third- party services via APIs for enhanced functionality.",
+		startDate: "2022-04-04",
 		endDate: "At the moment",
 		company: {
 			name: "Sociedad Privada del Alquiler S.A.S.",
@@ -33,30 +33,22 @@ const EXPERIENCE = [
 		tags: [
 			"React.js",
 			"Next.js",
+			"Node.js",
+			"Tailwindcss",
+			"Express.js",
+			"Angular",
+			"Figma",
+			"Git",
+			"GitHub",
 			"Astro.js",
 			"MySQL",
-			"Express.js",
 			"Flutter",
-		],
-	},
-	{
-		jobTitle: "IT Analyst",
-		description: "I work as a software developer, creating business applications for all the internal needs of the business group using web technologies as React.js, Next.js, Astro and mobile using Flutter.",
-		startDate: "2022-04-04",
-		endDate: "2024-03-01",
-		company: {
-			name: "Sociedad Privada del Alquiler S.A.S.",
-			url: "https://spagrupoinmobiliario.com"
-		},
-		modality: "On-site",
-		tags: [
-			"React.js",
 			"VPS",
 			"IT Support",
-			"MySQL",
 			"PHP",
+			"SEO",
 		],
-	}
+	},
 ]
 
 export { LINKEDIN_URL, GITHUB_URL, NPM_URL, FIVERR_URL, PROJECTS, EXPERIENCE };
