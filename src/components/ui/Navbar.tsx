@@ -42,7 +42,7 @@ export default function Navbar() {
 							Work with me
 						</Link>
 						<Link
-							href={"/cv.pdf"}
+							href={"/cv_JUANDANIELPENALOZA.pdf"}
 							target={"_blank"}
 							title="Download CV"
 							rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Navbar() {
 							role="button"
 							tabIndex={0}
 							className="font-montserrat text-lg font-medium leading-6 text-neutral-500 hover:text-indigo-500"
-							download={"cv.pdf"}
+							download={"cv_JUANDANIELPENALOZA.pdf"}
 						>
 							Download CV
 						</Link>

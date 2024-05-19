@@ -34,7 +34,7 @@ export default function Footer() {
 							Work with me
 						</Link>
 						<Link
-							href={"/cv.pdf"}
+							href={"/cv_JUANDANIELPENALOZA.pdf"}
 							target={"_blank"}
 							title="Download CV"
 							rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Footer() {
 							role="button"
 							tabIndex={0}
 							className="font-montserrat font-medium leading-6 hover:text-indigo-200"
-							download={"cv.pdf"}
+							download={"cv_JUANDANIELPENALOZA.pdf"}
 						>
 							Download CV
 						</Link>
