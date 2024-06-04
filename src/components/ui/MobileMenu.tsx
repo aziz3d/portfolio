@@ -57,17 +57,16 @@ export default function MobileMenu() {
 								Work with me
 							</Link>
 							<Link
-								href={"/cv_JUANDANIELPENALOZA.pdf"}
+								href={"/cv_juan-daniel-penaloza.pdf"}
 								target={"_blank"}
-								title="Download CV"
+								title="View CV"
 								rel="noopener noreferrer"
-								aria-label="Download CV"
+								aria-label="View CV"
 								role="button"
 								tabIndex={0}
 								className="font-montserrat text-lg font-medium leading-6 text-neutral-500 hover:text-indigo-500"
-								download={"cv_JUANDANIELPENALOZA.pdf"}
 							>
-								Download CV
+								View CV
 							</Link>
 						</div>
 						<button
