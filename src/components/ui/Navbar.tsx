@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { BarsMenuIcon } from "../../assets/svg/index";
 import MobileMenu from "./MobileMenu";
+import { PDF_PATH } from "@/constants";
 
 export default function Navbar() {
 	return (
@@ -42,7 +43,7 @@ export default function Navbar() {
 							Work with me
 						</Link>
 						<Link
-							href={"/cv_juan-daniel-penaloza.pdf"}
+							href={`/${PDF_PATH}`}
 							target={"_blank"}
 							title="View CV"
 							rel="noopener noreferrer"

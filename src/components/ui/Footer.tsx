@@ -1,5 +1,5 @@
 import { FiverrFlatIcon, FiverrIcon, GitHubIcon, LinkedInIcon } from "@/assets/svg";
-import { FIVERR_URL, GITHUB_URL, LINKEDIN_URL } from "@/constants";
+import { FIVERR_URL, GITHUB_URL, LINKEDIN_URL, PDF_PATH } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -34,7 +34,7 @@ export default function Footer() {
 							Work with me
 						</Link>
 						<Link
-							href={"/cv_juan-daniel-penaloza.pdf"}
+							href={`/${PDF_PATH}`}
 							target={"_blank"}
 							title="View CV"
 							rel="noopener noreferrer"

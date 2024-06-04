@@ -1,77 +1,54 @@
 "use client";
 
-import { contactFormSchema } from "@/schemas";
-import { useFormik } from "formik";
-import React from "react";
+import { EMAIL_ADDRESS } from "@/constants";
+import Link from "next/link";
+import React, { useState } from "react";
 
 export default function ContactForm() {
-	const onSubmit = async () => {
-	};
+	return (
+		<div className="flex">
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Email"
+				value={EMAIL_ADDRESS}
+				className="border-1 col-span-1 rounded-lg rounded-e-none border border-r-0 border-neutral-300 bg-white px-3 py-2 text-neutral-500 outline-none selection:bg-indigo-500 selection:text-white placeholder:text-neutral-500 focus:border-indigo-300"
+			/>
+			<CopyEmailButton />
+			<Link
+				title="Contact me"
+				href={"mailto:" + EMAIL_ADDRESS}
+				target={"_blank"}
+				rel="noopener noreferrer"
+				aria-label="Contact me"
+				className="col-span-2 rounded-lg rounded-s-none bg-indigo-500 px-4 py-2.5 font-semibold leading-6 text-white hover:bg-indigo-400"
+			>
+				Contact me
+			</Link>
+		</div>
+	);
+}
 
-	const {
-		handleSubmit,
-		errors,
-		touched,
-		values,
-		handleBlur,
-		handleChange,
-		resetForm,
-		submitForm,
-		isValid,
-	} = useFormik({
-		initialValues: {
-			firstName: "",
-			lastName: "",
-			email: "",
-			message: "",
-		},
-		validationSchema: contactFormSchema,
-		onSubmit,
-	});
+function CopyEmailButton() {
+	const [isCopied, setIsCopied] = useState(false);
+
+	const copyEmail = () => {
+		navigator.clipboard.writeText(EMAIL_ADDRESS);
+
+		setIsCopied(true);
+		setTimeout(() => setIsCopied(false), 5000);
+		return () => setIsCopied(false);
+	}
 
 	return (
-		<form onSubmit={handleSubmit} className="flex w-full flex-col gap-6">
-			<div className="grid grid-cols-2 gap-6">
-				<input
-					type="text"
-					name="firstName"
-					id="firstName"
-					placeholder="First name"
-					className="col-span-1 rounded-lg bg-white px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-					autoComplete="given-name"
-				/>
-				<input
-					type="text"
-					name="lastName"
-					id="lastName"
-					placeholder="Last name"
-					className="col-span-1 rounded-lg bg-white px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-					autoComplete="family-name"
-				/>
-				<input
-					type="email"
-					name="email"
-					id="email"
-					placeholder="Email"
-					className="col-span-2 rounded-lg bg-white px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-					autoComplete="email"
-				/>
-				<textarea
-					name="message"
-					id="message"
-					cols={30}
-					rows={10}
-					placeholder="Message"
-					className="col-span-2 max-h-[150px] rounded-lg bg-white px-3 py-2 text-neutral-500 outline outline-1 outline-neutral-300 placeholder:text-neutral-500 focus:outline-2 focus:outline-indigo-300"
-				></textarea>
-				<button
-					type="submit"
-					title="Submit"
-					className="col-span-2 rounded-lg bg-indigo-500 px-4 py-2.5 font-semibold leading-6 text-white hover:bg-indigo-400"
-				>
-					Submit
-				</button>
-			</div>
-		</form>
-	);
+		<button
+			title={isCopied ? "Email copied!" : "Copy email"}
+			aria-label={isCopied ? "Email copied!" : "Copy email"}
+			className="col-span-2 border border-indigo-500 px-4 py-2.5 font-semibold leading-6 text-indigo-500 hover:bg-indigo-50"
+			onClick={copyEmail}
+		>
+			{isCopied ? "Email copied!" : "Copy email"}
+		</button>
+	)
 }

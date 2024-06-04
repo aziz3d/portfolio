@@ -8,6 +8,10 @@ const GITHUB_URL = "https://github.com/DanielPenalozaB";
 
 const NPM_URL = "https://www.npmjs.com/~daniel-penaloza";
 
+const EMAIL_ADDRESS = "juandanielpenalozabrito@gmail.com";
+
+const PDF_PATH = "cv_juan-daniel-penaloza.pdf";
+
 const PROJECTS = [
 	{
 		title: "Portfolio",
@@ -51,4 +55,4 @@ const EXPERIENCE = [
 	},
 ]
 
-export { LINKEDIN_URL, GITHUB_URL, NPM_URL, FIVERR_URL, PROJECTS, EXPERIENCE };
+export { LINKEDIN_URL, GITHUB_URL, NPM_URL, FIVERR_URL, EMAIL_ADDRESS, PDF_PATH, PROJECTS, EXPERIENCE };

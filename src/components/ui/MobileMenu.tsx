@@ -4,6 +4,7 @@ import { BarsMenuIcon } from "@/assets/svg";
 import React, { useState } from "react";
 import { XMarkIcon } from "../../assets/svg/index";
 import Link from "next/link";
+import { PDF_PATH } from "@/constants";
 
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +58,7 @@ export default function MobileMenu() {
 								Work with me
 							</Link>
 							<Link
-								href={"/cv_juan-daniel-penaloza.pdf"}
+								href={`/${PDF_PATH}`}
 								target={"_blank"}
 								title="View CV"
 								rel="noopener noreferrer"
