@@ -25,7 +25,7 @@ const PROJECTS = [
 
 const EXPERIENCE = [
 	{
-		jobTitle: "Fullstack Developer",
+		jobTitle: "Junior Developer",
 		description: "Led a team of 5 developers in building 16 real estate web projects, managing the entire lifecycle from planning to launch using Agile methods.Ensured project goals, timelines, and budgets were met.Beyond development, I managed servers, designed mockups with Figma, and integrated third- party services via APIs for enhanced functionality.",
 		startDate: "2022-04-04",
 		endDate: "At the moment",
